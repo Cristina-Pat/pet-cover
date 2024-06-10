@@ -35,7 +35,7 @@ The app allows pet owners to identify insurance plans offered by different provi
 
 #### Home Page
 
-
+![image](https://github.com/Cristina-Pat/pet-cover/blob/main/docs/images/HomePage%20PetCover.JPG)
 *Figure 1. Home Page Wireframe*
 
 
