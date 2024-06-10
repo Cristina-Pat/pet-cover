@@ -46,6 +46,48 @@ The app allows pet owners to identify insurance plans offered by different provi
 
 *Figure . Home Page Component Hirerarcy*
 
+### Class Diagram: Cat
+
+```mermaid
+classDiagram
+    Cat --> MedicalRecord : has
+    Cat --> InsurancePolicy : has
+
+    class Cat {
+        +String id
+        +String name
+        +String breed
+        +Int age
+        +String owner
+        +List<MedicalRecord> medicalHistory
+        +InsurancePolicy insurancePolicy
+
+        +getDetails() String
+        +addMedicalRecord(record: MedicalRecord) void
+        +updateInsurancePolicy(policy: InsurancePolicy) void
+        +calculateAgeInHumanYears() Int
+    }
+
+    class MedicalRecord {
+        +Date date
+        +String description
+        +String treatment
+        +Double cost
+
+        +getSummary() String
+    }
+
+    class InsurancePolicy {
+        +String policyNumber
+        +String provider
+        +String coverageDetails
+        +Date expirationDate
+        +Double premium
+
+        +renewPolicy(newExpirationDate: Date) void
+        +getPolicyInfo() String
+    }
+
 
 
 
