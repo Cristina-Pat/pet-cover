@@ -35,7 +35,7 @@ The app allows pet owners to identify insurance plans offered by different provi
 
 #### Home Page
 
-
+![image](https://github.com/Cristina-Pat/pet-cover/blob/main/docs/images/HomePage%20PetCover.JPG)
 *Figure 1. Home Page Wireframe*
 
 
@@ -43,8 +43,50 @@ The app allows pet owners to identify insurance plans offered by different provi
 ### Comnponent Hierarchy
 
 #### Home Page
+![image](https://github.com/Cristina-Pat/pet-cover/blob/main/docs/images/componentHierarchy_HomePage.JPG)
+*Figure 2. Home Page Component Hirerarcy*
 
-*Figure . Home Page Component Hirerarcy*
+### Class Diagram: Cat
+
+```mermaid
+classDiagram
+    Cat --> MedicalRecord : has
+    Cat --> InsurancePolicy : has
+
+    class Cat {
+        +String id
+        +String name
+        +String breed
+        +Int age
+        +String owner
+        +List<MedicalRecord> medicalHistory
+        +InsurancePolicy insurancePolicy
+
+        +getDetails() String
+        +addMedicalRecord(record: MedicalRecord) void
+        +updateInsurancePolicy(policy: InsurancePolicy) void
+        +calculateAgeInHumanYears() Int
+    }
+
+    class MedicalRecord {
+        +Date date
+        +String description
+        +String treatment
+        +Double cost
+
+        +getSummary() String
+    }
+
+    class InsurancePolicy {
+        +String policyNumber
+        +String provider
+        +String coverageDetails
+        +Date expirationDate
+        +Double premium
+
+        +renewPolicy(newExpirationDate: Date) void
+        +getPolicyInfo() String
+    }
 
 
 
