@@ -43,8 +43,8 @@ The app allows pet owners to identify insurance plans offered by different provi
 ### Comnponent Hierarchy
 
 #### Home Page
-
-*Figure . Home Page Component Hirerarcy*
+![image](https://github.com/Cristina-Pat/pet-cover/blob/main/docs/images/componentHierarchy_HomePage.JPG)
+*Figure 2. Home Page Component Hirerarcy*
 
 ### Class Diagram: Cat
 
