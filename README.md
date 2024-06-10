@@ -25,9 +25,28 @@ The app allows pet owners to identify insurance plans offered by different provi
  2.3. Pet Insurance API: Integrate with external APIs to fetch real-time insurance data, quotes, or additional information from insurance providers
 
 ### Technologies Used
-React: the rontend framework for building the user interface. Use ```axios``` library to make HTTP requests to the Spring Boot application.\
-Spring Boot: the backend framework for handling server-side logic and APIs. The React application can communicate with the backend if CORS (Cross-Origin Resource Sharing) is enabled in Spring Boot.\
-MongoDB: the NoSQL database for storing insurance provider and plan data.
+**React**: the frontend framework for building the user interface. Use ```axios``` library to make HTTP requests to the Spring Boot application.\
+**Spring Boot**: the backend framework for handling server-side logic and APIs. The React application can communicate with the backend if CORS (Cross-Origin Resource Sharing) is enabled in Spring Boot.\
+**MongoDB**: the NoSQL database for storing insurance provider and plan data.
 
 ![image](https://github.com/Cristina-Pat/pet-cover/assets/72979214/46af1974-27f5-4708-b937-6089db0e8df0)
+
+### Wireframes
+
+#### Home Page
+
+
+*Figure 1. Home Page Wireframe*
+
+
+
+### Comnponent Hierarchy
+
+#### Home Page
+
+*Figure . Home Page Component Hirerarcy*
+
+
+
+
 
